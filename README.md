@@ -55,3 +55,19 @@ public class FileUploadController {
             )
         )
     )
+
+    ......................................................
+
+
+     @Operation(
+        summary = "Upload a file with a mandatory header",
+        requestBody = @RequestBody(
+            content = @Content(
+                mediaType = "multipart/form-data",
+                schema = @Schema(
+                    type = "object",
+                    example = "{ \"scriptFile\": \"<binary data>\" }"
+                )
+            )
+        )
+    )
