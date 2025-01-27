@@ -71,3 +71,5 @@ public class FileUploadController {
             )
         )
     )
+..................................................................
+ @RequestParam("scriptFile") @Schema(description = "File to be uploaded", type = "string", format = "binary")
